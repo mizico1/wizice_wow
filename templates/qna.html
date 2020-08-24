@@ -1,0 +1,1848 @@
+<html dir="ltr" lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1">
+
+    <script type="text/javascript" src="http://saerom.sjeduhs.kr/template/common/js/jquery/jquery-1.7.min.js"></script>
+    <script type="text/javascript"
+        src="http://saerom.sjeduhs.kr/template/common/js/jcarousellite_add-control.js"></script>
+    <script type="text/javascript" src="http://saerom.sjeduhs.kr/template/common/js/common.js"></script>
+
+    <link charset="utf-8" href="static/css/style.css" type="text/css" rel="stylesheet">
+    <script charset="utf-8" src="static/js/qna.js" type="text/javascript"></script>
+
+
+
+    <link charset="utf-8" href="static/css/style2.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/str/cre/bbs/tmplat/BBSTMP_0000000000006/script.js"></script>
+
+
+
+    <title>
+        새롬고등학교
+
+
+        &gt;새롬고등학교&gt;학생마당&gt;Q&A
+
+    </title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body>
+    <!--  ///////////  HEADER /////////// -->
+    <ul class="skipNav">
+        <li><a href="#">로그인 바로가기</a></li>
+        <li><a href="#">메인메뉴 바로가기</a></li>
+        <li><a href="#">본문바로가기</a></li>
+        <li><a href="#">하단정책 메뉴 및 카피라이트 바로가기</a></li>
+    </ul>
+    <div class="header">
+        <div class="gnb_wrap float_wrap">
+            <div class="search">
+                <form name="totalSearchForm" action="/sch/search.do" method="post"
+                    onsubmit="return fnTotalSearch(this);">
+                    <!-- <input class="gnb_search" type="text" placeholder="" class="top-search__in__input" id="searchWrd" name="searchWrd" />
+                    <input class="search_btn" type="button" />
+                    -->
+                    <fieldset>
+                        <legend>통합검색입력폼</legend>
+                        <label for="searchWrd" class="hidden_word">검색어입력</label>
+                        <input class="gnb_search inp_s" type="text" placeholder="통합검색" id="searchWrd" name="searchWrd">
+                        <input class="search_btn" type="image"
+                            src="http://saerom.sjeduhs.kr/str/cre/lyt/tmplat/sit/LYTTMP_0000000000346/images/common/scope.png"
+                            alt="검색(통합)">
+                    </fieldset>
+                </form>
+            </div>
+            <ul class="gnb">
+                <li><a href="http://www.sje.go.kr" target="_blank">교육청 홈페이지</a></li>
+                <li><a href="http://smart-i.sje.go.kr" target="_blank">스마트아이 메인</a></li>
+                <li><a href="/">HOME</a></li>
+
+
+                <li><a href="http://smart-i.sje.go.kr/uat/uia/egovLoginUsr.do?siteId=SITE_000000000000495">로그인</a></li>
+                <li><a
+                        href="http://smart-i.sje.go.kr/uss/umt/cmm/EgovSelectMber.do?siteId=SITE_000000000000495">회원가입</a>
+                </li>
+
+
+
+                <li><a href="/msi/siteMap.do">사이트맵</a></li>
+            </ul>
+        </div>
+        <div class="lnb_wrap">
+            <h1 class="logo"><a href="/"><img src="static/images/SITE_201704240117039220.png"
+                        alt="새롬고등학교"></a></h1>
+            <div class="" id="lnb">
+                <ul class="menu">
+
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017429">학교소개</a>
+
+
+                        <div class="smenu m1">
+                            <ul>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017429">
+                                        학교장인사말
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017430">
+                                        학교상징
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017431">
+                                        교육목표
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000018205">
+                                        학교연혁
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017725">
+                                        학교현황
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000018188">
+                                        학사일정
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000021568&amp;menuId=MNU_0000000000022826">
+                                        교육과정
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000022645">
+                                        교직원소개
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017877">
+                                        시그니처
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017433">
+                                        오시는길
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016800&amp;menuId=MNU_0000000000017219">알림마당</a>
+
+
+                        <div class="smenu m2">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016800&amp;menuId=MNU_0000000000017219">
+                                        공지사항
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016901&amp;menuId=MNU_0000000000017434">
+                                        가정통신문
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016831&amp;menuId=MNU_0000000000017249">
+                                        포토앨범
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018626&amp;menuId=MNU_0000000000018733">
+                                        동영상앨범
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018557&amp;menuId=MNU_0000000000018680">
+                                        방과후학교
+                                    </a>
+
+                                </li>
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018533&amp;menuId=MNU_0000000000018670">
+                                        급식영양
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018536&amp;menuId=MNU_0000000000018673">
+                                        보건안전
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018556&amp;menuId=MNU_0000000000018669">
+                                        학교규정
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018540&amp;menuId=MNU_0000000000018678">학생마당</a>
+
+
+                        <div class="smenu m3">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018540&amp;menuId=MNU_0000000000018678">
+                                        학생회
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018541&amp;menuId=MNU_0000000000018682">
+                                        상담실
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018543&amp;menuId=MNU_0000000000018681">
+                                        학습자료실
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/saeromweb/index.html?menuId=MNU_0000000000022824">
+                                        새롬누리
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018551&amp;menuId=MNU_0000000000021357">
+                                        칭찬합니다
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018544&amp;menuId=MNU_0000000000018684">학부모마당</a>
+
+                        <div class="smenu m4">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018544&amp;menuId=MNU_0000000000018684">
+                                        교원능력개발평가
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018545&amp;menuId=MNU_0000000000018685">
+                                        학교평가
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018546&amp;menuId=MNU_0000000000017905">
+                                        학부모게시판
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018538&amp;menuId=MNU_0000000000018675&amp;sso=ok">창체
+                            활동</a>
+
+
+                        <div class="smenu m5">
+                            <ul>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018538&amp;menuId=MNU_0000000000018675">
+                                        교육과정 동아리
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018539&amp;menuId=MNU_0000000000018676">
+                                        자율동아리
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018732&amp;menuId=MNU_0000000000018799">
+                                        봉사 활동
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018733&amp;menuId=MNU_0000000000018800">
+                                        자율 활동
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018738&amp;menuId=MNU_0000000000018801">
+                                        진로 활동
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018547&amp;menuId=MNU_0000000000025269">진로진학</a>
+
+
+                        <div class="smenu m6">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018547&amp;menuId=MNU_0000000000025269">
+                                        입학정보
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018548&amp;menuId=MNU_0000000000018687">
+                                        대학진학정보
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018549&amp;menuId=MNU_0000000000018688">
+                                        진로정보
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018550&amp;menuId=MNU_0000000000018689">커뮤니티</a>
+
+
+                        <div class="smenu m7">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018550&amp;menuId=MNU_0000000000018689">
+                                        우리학급
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018551&amp;menuId=MNU_0000000000018690">
+                                        칭찬합니다
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018552&amp;menuId=MNU_0000000000018691">
+                                        학교폭력신고
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016904&amp;menuId=MNU_0000000000018317">교육행정</a>
+
+
+                        <div class="smenu m8">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016904&amp;menuId=MNU_0000000000018317">
+                                        행정공지
+                                    </a>
+
+                                </li>
+
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018503&amp;menuId=MNU_0000000000018617">
+                                        학교운영위원회
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://rsv.sje.go.kr/eqp_03_001.do?schId=EQP_SCH_000000000109&amp;menuId=MNU_0000000000018693">
+                                        학교시설이용
+                                    </a>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000019346">독도전시관</a>
+
+
+                        <div class="smenu m9">
+                            <ul>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000019347">
+                                        전시관 안내
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000019055&amp;menuId=MNU_0000000000019349">
+                                        공지사항
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000021407&amp;menuId=MNU_0000000000022612">
+                                        독도(포토)앨범
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000021693&amp;menuId=MNU_0000000000023073">
+                                        보도자료
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000022891&amp;menuId=MNU_0000000000024676">정보공개</a>
+
+
+                        <div class="smenu m10">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000022891&amp;menuId=MNU_0000000000024676">
+                                        정보목록
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000022892&amp;menuId=MNU_0000000000024677">
+                                        사전공표대상정보
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000022893&amp;menuId=MNU_0000000000024678">
+                                        비공개대상 세부기준
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000024679">
+                                        정보목록공개(2014년이후)
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <p class="m_nav_open"><img src="/str/cre/lyt/tmplat/sit/LYTTMP_0000000000412/images/common/m_nav_open.png"
+                    alt="메뉴열기"></p>
+            <p class="m_search"><img src="/str/cre/lyt/tmplat/sit/LYTTMP_0000000000412/images/common/m_search_ico.png"
+                    alt="통합검색"></p>
+            <!--
+            <p class="m_search"><img src="/str/cre/lyt/tmplat/sit/LYTTMP_0000000000412/images/common/m_search_ico.png" alt="통합검색" /></p>
+            <div class="m_search_form">
+                <form name="totalSearchForm" action="/sch/search.do" method="post" onsubmit="return fnTotalSearch(this);">
+                    <input type="text" placeholder="Search" class="m_search_input" id="searchWrd" name="searchWrd">
+                    <input type="image" src="/str/cre/lyt/tmplat/sit/LYTTMP_0000000000412/images/common/m_search_ico.png">
+                </form>
+            </div>
+             -->
+            <div class="m_lnb_wrap">
+                <p class="m_nav_close"><img
+                        src="/str/cre/lyt/tmplat/sit/LYTTMP_0000000000412/images/common/m_nav_close.png" alt="메뉴닫기"></p>
+                <ul class="m_gnb">
+                    <li><a href="http://www.sje.go.kr" target="_blank">교육청 홈페이지</a></li>
+                    <li><a href="http://smart-i.sje.go.kr" target="_blank">스마트아이 메인</a></li>
+                    <li><a href="/">HOME</a></li>
+
+
+                    <li><a href="http://smart-i.sje.go.kr/uat/uia/egovLoginUsr.do?siteId=SITE_000000000000495">로그인</a>
+                    </li>
+                    <li><a
+                            href="http://smart-i.sje.go.kr/uss/umt/cmm/EgovSelectMber.do?siteId=SITE_000000000000495">회원가입</a>
+                    </li>
+
+
+
+                    <li><a href="/msi/siteMap.do">사이트맵</a></li>
+                </ul>
+                <ul class="menu">
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017429">학교소개</a>
+
+
+                        <div class="smenu m1">
+                            <ul>
+
+                                <li>
+
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017429">
+                                        학교장인사말
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017430">
+                                        학교상징
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017431">
+                                        교육목표
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000018205">
+                                        학교연혁
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017725">
+                                        학교현황
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000018188">
+                                        학사일정
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000021568&amp;menuId=MNU_0000000000022826">
+                                        교육과정
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000022645">
+                                        교직원소개
+                                    </a>
+
+                                </li>
+
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017877">
+                                        시그니처
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000017433">
+                                        오시는길
+                                    </a>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016800&amp;menuId=MNU_0000000000017219">알림마당</a>
+
+
+                        <div class="smenu m2">
+                            <ul>
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016800&amp;menuId=MNU_0000000000017219">
+                                        공지사항
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016901&amp;menuId=MNU_0000000000017434">
+                                        가정통신문
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016831&amp;menuId=MNU_0000000000017249">
+                                        포토앨범
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018626&amp;menuId=MNU_0000000000018733">
+                                        동영상앨범
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018557&amp;menuId=MNU_0000000000018680">
+                                        방과후학교
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018533&amp;menuId=MNU_0000000000018670">
+                                        급식영양
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018536&amp;menuId=MNU_0000000000018673">
+                                        보건안전
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018556&amp;menuId=MNU_0000000000018669">
+                                        학교규정
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018540&amp;menuId=MNU_0000000000018678">학생마당</a>
+
+                        <div class="smenu m3">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018540&amp;menuId=MNU_0000000000018678">
+                                        학생회
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018541&amp;menuId=MNU_0000000000018682">
+                                        상담실
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018543&amp;menuId=MNU_0000000000018681">
+                                        학습자료실
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/saeromweb/index.html?menuId=MNU_0000000000022824">
+                                        새롬누리
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018551&amp;menuId=MNU_0000000000021357">
+                                        칭찬합니다
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018544&amp;menuId=MNU_0000000000018684">학부모마당</a>
+
+
+                        <div class="smenu m4">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018544&amp;menuId=MNU_0000000000018684">
+                                        교원능력개발평가
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018545&amp;menuId=MNU_0000000000018685">
+                                        학교평가
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018546&amp;menuId=MNU_0000000000017905">
+                                        학부모게시판
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018538&amp;menuId=MNU_0000000000018675&amp;sso=ok">창체
+                            활동</a>
+
+
+                        <div class="smenu m5">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018538&amp;menuId=MNU_0000000000018675">
+                                        교육과정 동아리
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018539&amp;menuId=MNU_0000000000018676">
+                                        자율동아리
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018732&amp;menuId=MNU_0000000000018799">
+                                        봉사 활동
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018733&amp;menuId=MNU_0000000000018800">
+                                        자율 활동
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018738&amp;menuId=MNU_0000000000018801">
+                                        진로 활동
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018547&amp;menuId=MNU_0000000000025269">진로진학</a>
+
+
+                        <div class="smenu m6">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018547&amp;menuId=MNU_0000000000025269">
+                                        입학정보
+                                    </a>
+
+                                </li>
+
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018548&amp;menuId=MNU_0000000000018687">
+                                        대학진학정보
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018549&amp;menuId=MNU_0000000000018688">
+                                        진로정보
+                                    </a>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018550&amp;menuId=MNU_0000000000018689">커뮤니티</a>
+
+
+                        <div class="smenu m7">
+                            <ul>
+
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018550&amp;menuId=MNU_0000000000018689">
+                                        우리학급
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018551&amp;menuId=MNU_0000000000018690">
+                                        칭찬합니다
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018552&amp;menuId=MNU_0000000000018691">
+                                        학교폭력신고
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016904&amp;menuId=MNU_0000000000018317">교육행정</a>
+
+
+                        <div class="smenu m8">
+                            <ul>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000016904&amp;menuId=MNU_0000000000018317">
+                                        행정공지
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018503&amp;menuId=MNU_0000000000018617">
+                                        학교운영위원회
+                                    </a>
+
+                                </li>
+
+
+                                <li>
+                                    <a
+                                        href="http://rsv.sje.go.kr/eqp_03_001.do?schId=EQP_SCH_000000000109&amp;menuId=MNU_0000000000018693">
+                                        학교시설이용
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000019346">독도전시관</a>
+
+                        <div class="smenu m9">
+                            <ul>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000019347">
+                                        전시관 안내
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000019055&amp;menuId=MNU_0000000000019349">
+                                        공지사항
+                                    </a>
+
+                                </li>
+
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000021407&amp;menuId=MNU_0000000000022612">
+                                        독도(포토)앨범
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000021693&amp;menuId=MNU_0000000000023073">
+                                        보도자료
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu10"><a
+                            href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000022891&amp;menuId=MNU_0000000000024676">정보공개</a>
+
+
+                        <div class="smenu m10">
+                            <ul>
+
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000022891&amp;menuId=MNU_0000000000024676">
+                                        정보목록
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000022892&amp;menuId=MNU_0000000000024677">
+                                        사전공표대상정보
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a
+                                        href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000022893&amp;menuId=MNU_0000000000024678">
+                                        비공개대상 세부기준
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a href="http://saerom.sjeduhs.kr/msi/cntntsService.do?menuId=MNU_0000000000024679">
+                                        정보목록공개(2014년이후)
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--  ///////////  SUB CONTAINER /////////// -->
+    <div class="sub_container float_wrap">
+
+        <div id="submenu">
+            <div class="sub_tit">
+                <h2>
+
+
+                    학생마당
+
+                    <a href="#">메뉴열기</a>
+                </h2>
+            </div>
+            <div class="submenu__wrap">
+
+                <ul class="depth01">
+
+
+                    <li class="">
+
+                        <a href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018540&amp;menuId=MNU_0000000000018678"
+                            class="">학생회</a>
+
+
+
+                    </li>
+
+                    <li class="">
+                        <a href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018541&amp;menuId=MNU_0000000000018682"
+                            class="">상담실</a>
+                    </li>
+
+                    <li class="on">
+                        <a href="http://agent.wizice.com/qna/qna.html"
+                            class="on">Q&A</a>
+                        <ul class="depth02">
+
+                            <li>
+                                <a href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000019029&amp;menuId=MNU_0000000000019239"
+                                    class="">국어</a>
+                            </li>
+ 
+                            <li>
+                                <a href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000019033&amp;menuId=MNU_0000000000024108"
+                                    class="">영어</a>
+                            </li>
+                            <li>
+                                <a href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000019036&amp;menuId=MNU_0000000000019286"
+                                    class="">수학</a>
+  
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <a href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018543&amp;menuId=MNU_0000000000018681"
+                            class="">학습자료실</a>
+
+                    </li>
+
+
+                    <li class="">
+
+
+                        <a href="http://saerom.sjeduhs.kr/saeromweb/index.html?menuId=MNU_0000000000022824"
+                            class="">새롬누리</a>
+
+
+
+                    </li>
+
+
+                    <li class="">
+
+                        <a href="http://saerom.sjeduhs.kr/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018551&amp;menuId=MNU_0000000000021357"
+                            class="">칭찬합니다</a>
+
+
+
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+            <div class="subcnt_gotop"><a href="#">상단으로</a></div>
+        </div>
+
+        <div class="rightCont">
+            <div class="title_wrap">
+                <div class="pageHistory">
+                    <ul>
+
+
+                        새롬고등학교&gt;학생마당&gt;Q&A
+
+
+
+                    </ul>
+                </div>
+                <h3>
+
+                    Q&A
+
+                </h3>
+
+            </div>
+            <div class="contents_area">
+
+                <script type="text/javascript" src="/template/common/js/jquery/jquery.form.js"></script>
+                <script type="text/javascript" src="/template/common/js/board.js"></script>
+
+                <script type="text/javascript">
+
+
+
+                    function fn_egov_addNotice(url) {
+
+
+
+                        if (confirm('로그인 하시겠습니까?')) {
+                            location.href = "http://smart-i.sje.go.kr/uat/uia/egovLoginUsr.do";
+                        }
+
+
+                    }
+
+                    $(document).ready(function () {
+                        $('#btnBbsWrite').click(function () { fn_egov_addNotice(this.href); return false; });
+                        fnCtgryInit('');
+
+                        $("#listForm").ajaxForm({
+                            url: '/cop/bbs/manageArticle.do'
+                            , dataType: 'json'
+                            , beforeSubmit: function ($form, options) {
+                                if (checkArticle()) {
+                                    cfgCommonPopShow();
+                                } else {
+                                    return false;
+                                }
+                            }
+                            , success: function (data) {
+                                cfgCommonPopHide();
+                                alert(data.message);
+                                document.location.href = $('#returnUrl').val();
+                            }
+                            , error: function () {
+                                alert('문제가 발생하여 요청처리를 완료하지 못하였습니다.');
+                                cfgCommonPopHide();
+                            }
+                            , resetForm: true
+                        });
+                    });
+
+
+
+                    function checkArticle() {
+                        if ($("input:checkbox[name=nttNoArr]:checked").length == 0) {
+                            alert('게시글을 선택해주세요');
+                            return false;
+                        }
+                        return true;
+                    }
+
+                    function bbsSelectPop() {
+                        var url = "/cop/com/selectAllBBSMasterManageInfs.do?siteId=SITE_000000000000495&bbsId=BBSMSTR_000000018543";
+                        var win = window.open(url, 'bbsSelectPop', ' scrollbars=yes, resizable=yes, left=0, top=0, width=700,height=650');
+                        if (win != null) {
+                            win.focus();
+                        }
+                    }
+
+                    function selectBbsMaster(bbsId, ctgryId) {
+                        $('#trgetId').val(bbsId);
+                        $('#ctgryId').val(ctgryId);
+
+                        $('#listForm').submit();
+                    }
+
+                    function cancleBbsMaster() {
+                        cfgCommonPopHide();
+                    }
+
+                    function fn_egov_searchMinusWeekDay() {
+                        var frm = document.getElementById("listForm");
+                        var schduldate = frm.searchWeekDt.value;
+                        if (schduldate == "") {
+                            schduldate = frm.today.value;
+                        }
+                        var array_date = schduldate.split("-");
+
+                        var s_year = array_date[0];
+                        var s_month = array_date[1];
+                        var s_date = array_date[2];
+
+                        // 2월은 29,30,31이 없어서 1월 29,30,31일 에서 이전달 클릭 시 오류가 발생함 그래서 3월 29,30,31일 경우 일자를 28일로 강제 세팅되도록 수정
+                        if (s_month == "03" && (s_date == "29" || s_date == "30" || s_date == "31")) {
+                            s_date = "28";
+                        }
+
+                        var tomorrow = new Date(parseInt(s_year, 10), parseInt(s_month, 10) - 1, parseInt(s_date, 10) - 7);
+                        var year = tomorrow.getFullYear();
+                        var month = tomorrow.getMonth() + 1;
+                        var day = tomorrow.getDate();
+                        var bbsId = $('#bbsId').val();
+                        var menuId = $('#menuId').val();
+
+                        console.log('bbsId === ' + bbsId);
+                        console.log('menuId === ' + menuId);
+                        if (month < 10) month = '0' + month;
+                        if (day < 10) day = '0' + day;
+                        frm.searchWeekDt.value = year + '-' + month + '-' + day;
+                        frm.action = "/cop/bbs/selectBoardList.do"
+                        frm.submit();
+
+                    }
+
+
+                    function fn_egov_searchPlusWeekDay() {
+                        var frm = document.getElementById("listForm");
+                        var schduldate = frm.searchWeekDt.value;
+                        if (schduldate == "") {
+                            schduldate = frm.today.value;
+                        }
+                        var array_date = schduldate.split("-");
+
+                        var s_year = array_date[0];
+                        var s_month = array_date[1];
+                        var s_date = array_date[2];
+
+                        // 2월은 29,30,31이 없어서 1월 29,30,31일 에서 다음달 클릭 시 오류가 발생함 그래서 1월 29,30,31일 경우 일자를 28일로 강제 세팅되도록 수정
+                        if (s_month == "01" && (s_date == "29" || s_date == "30" || s_date == "31")) {
+                            s_date = "28";
+                        }
+
+                        // 4,6,9,11월은 31일이 없어서 3,5,8,10월 31일 에서 다음달 클릭 시 오류가 발생함 그래서 3,5,8,10월 31일 경우 일자를 30일로 강제 세팅되도록 수정
+                        if ((s_month == "03" || s_month == "05" || s_month == "08" || s_month == "10") && s_date == "31") {
+                            s_date = "30";
+                        }
+
+                        var tomorrow = new Date(parseInt(s_year, 10), parseInt(s_month, 10) - 1, parseInt(s_date, 10) + 7);
+                        var year = tomorrow.getFullYear();
+                        var month = tomorrow.getMonth() + 1;
+                        var day = tomorrow.getDate();
+                        if (month < 10) month = '0' + month;
+                        if (day < 10) day = '0' + day;
+                        frm.searchWeekDt.value = year + '-' + month + '-' + day;
+                        frm.action = "/cop/bbs/selectBoardList.do";
+                        frm.submit();
+                    }
+                </script>
+
+
+
+                <div id="bbs_wrap">
+                    <!-- 200728 <div id="bbs_mbl">-->
+
+
+
+
+
+
+
+                    ※게시물의 게시기간은 10년이며, 기간이 경과한 게시물은 삭제되오니 유의하여 주시기 바랍니다.
+                    <form id="listForm" name="listForm" method="post"
+                        action="/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018543&amp;menuId=MNU_0000000000018681">
+                        <input type="hidden" id="registAction" name="registAction">
+                        <input type="hidden" id="siteId" name="siteId" value="SITE_000000000000495">
+                        <input type="hidden" id="bbsId" name="bbsId" value="BBSMSTR_000000018543">
+                        <input type="hidden" id="trgetId" name="trgetId">
+                        <input type="hidden" id="ctgryId" name="ctgryId">
+
+                        <input type="hidden" id="returnUrl" name="returnUrl"
+                            value="/cop/bbs/selectBoardList.do?pageIndex=1&amp;bbsId=BBSMSTR_000000018543&amp;menuId=MNU_0000000000018681">
+                        <input type="hidden" name="valChkTest" value="BBSA03">
+
+
+
+                        <div class="total">총 게시물 <strong>26</strong>건 ㅣ 현재페이지 <strong>1</strong>/3</div>
+
+
+
+
+
+
+
+                        <div id="BBSTMP_0000000000006" class="bss_list">
+
+                            <table summary="" class="list_table">
+                                <caption>학습자료실</caption>
+                                <thead>
+                                    <tr>
+
+                                        <th class="num" scope="col">번호</th>
+
+                                        <th class="tit" scope="col">제목</th>
+
+                                        <th class="writer" scope="col">작성자</th>
+
+                                        <th class="subject" scope="col">과목</th>
+
+                                        <th class="date" scope="col">작성일시</th>
+                                        <th class="hits" scope="col">조회수</th>
+                                        <th class="pwd" scope="col">비밀글</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+
+                                        <td class="num">26</td>
+
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">질문합니다.</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            노*현
+
+                                        </td>
+
+                                        <td class="file">국어</td>
+
+                                        <td class="date">2020-08-02</td>
+                                        <td class="hits">2</td>
+                                        <td class="pwd">Y</td>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td class="num">25</td>
+
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">질문있습니다!</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            윤*영
+
+                                        </td>
+
+                                        <td class="file">영어</td>
+
+                                        <td class="date">2020-07-30</td>
+                                        <td class="hits">4</td>
+                                        <td class="pwd">Y</td>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td class="num">24</td>
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">수학 질문드립니다.</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            전*영
+
+                                        </td>
+
+                                        <td class="file">수학</td>
+
+                                        <td class="date">2020-07-24</td>
+                                        <td class="hits">85</td>
+                                        <td class="pwd">N</td>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td class="num">23</td>
+
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">질문있습니다.</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            김*진
+
+                                        </td>
+
+                                        <td class="file">수학</td>
+
+                                        <td class="date">2020-07-24</td>
+                                        <td class="hits">5</td>
+                                        <td class="pwd">Y</td>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td class="num">22</td>
+
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">질문있습니다.</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            김*진
+
+                                        </td>
+
+                                        <td class="file">국어</td>
+
+                                        <td class="date">2020-07-20</td>
+                                        <td class="hits">37</td>
+                                        <td class="pwd">N</td>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td class="num">21</td>
+
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">질문합니다.</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            정*은
+
+                                        </td>
+
+                                        <td class="file">수학</td>
+
+                                        <td class="date">2020-07-11</td>
+                                        <td class="hits">2</td>
+                                        <td class="pwd">Y</td>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td class="num">20</td>
+
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">영어 수행평가 관련해서 질문있습니다</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            이*서
+
+                                        </td>
+
+                                        <td class="file">영어</td>
+
+                                        <td class="date">2020-07-01</td>
+                                        <td class="hits">102</td>
+                                        <td class="pwd">N</td>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td class="num">19</td>
+
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">선생님 질문있습니다!!</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            박*정
+
+                                        </td>
+
+                                        <td class="file">수학</td>
+
+                                        <td class="date">2020-06-29</td>
+                                        <td class="hits">1</td>
+                                        <td class="pwd">Y</td>
+                                    </tr> 
+
+                                    <tr>
+
+                                        <td class="num">18</td>
+
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">질문있습니다</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            서*현
+
+                                        </td>
+
+                                        <td class="file">국어</td>
+
+                                        <td class="date">
+                                            <div sytle="float:left;width:50px;">2020-06-23
+                                            </div></td>
+                                        <td class="hits">3</td>
+                                        <td class="pwd">Y</td>
+                                    </tr>
+
+                                    <tr>
+
+                                        <td class="num">17</td>
+
+                                        <td class="tit">
+
+                                            <div style="float:left; width:200px;">
+                                                <a
+                                                    href="">p124 질문합니다!</a>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="writer">
+
+                                            김*별
+
+                                        </td>
+
+                                        <td class="file">영어</td>
+
+                                        <td class="date">
+                                            <div sytle="float:left;width:50px;">2020-06-23</div>
+                                            </td>
+                                        <td class="hits">34</td>
+                                        <td class="pwd">N</td>
+                                    </tr>
+
+
+
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
+
+                        <div class="btn_all">
+
+                            <div class="fR">
+
+                                <span class="bbtn_confirm2"><a
+                                        href="/cop/bbs/addBoardArticle.do?registAction=regist&amp;bbsId=BBSMSTR_000000018543&amp;menuId=MNU_0000000000018681"
+                                        id="btnBbsWrite" title="글쓰기(학습자료실)">글쓰기</a></span>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div id="paging">
+
+
+                        <strong class="current">1</strong><a
+                            href="/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018543&amp;menuId=MNU_0000000000018681&amp;pageIndex=2"
+                            class="page" title="2페이지로 이동">2</a><a
+                            href="/cop/bbs/selectBoardList.do?bbsId=BBSMSTR_000000018543&amp;menuId=MNU_0000000000018681&amp;pageIndex=3"
+                            class="page" title="3페이지로 이동">3</a>
+
+                    </div>
+
+
+
+                    <div id="bbs_search">
+                        <form name="frm" method="get" action="/cop/bbs/selectBoardList.do">
+                            <input type="hidden" name="bbsId" value="BBSMSTR_000000018543">
+                            <input name="menuId" type="hidden" value="MNU_0000000000018681">
+                            <input name="searchCate" type="hidden" value="">
+                            <input name="tmplatImportAt" type="hidden" value="">
+                            <fieldset>
+                                <legend>학습자료실 게시물 내 검색조건입력폼</legend>
+
+                                <label for="ftext" class="hdn">분류</label>
+                                <select name="searchCnd" id="ftext">
+                                    <option value="0">제목</option>
+                                    <option value="1">글내용</option>
+                                    <option value="2">작성자</option>
+                                </select>
+                                <label for="inp_text" class="hdn">학습자료실 게시물 내 검색어입력</label>
+                                <input name="searchWrd" value="" type="text" class="inp_s" id="inp_text">
+                                <span class="bbtn_s"><input type="submit" value="검색" title="검색(학습자료실 게시물 내)"></span>
+                            </fieldset>
+                        </form>
+                    </div>
+
+
+                </div> <!-- #bbsWrap end -->
+
+
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="footer">
+        <div class="footer_in">
+            <h2 class="foot_logo"><img src="static/images/SITE_201703220523428040.png"
+                    alt="새롬고등학교"></h2>
+            <div class="footer_policy">
+                <ul>
+                    <li><a href="http://saerom.sjeduhs.kr/msi/indvdlInfoPolicy.do" class="policy_col">개인정보처리방침</a></li>
+                    <li><a href="http://saerom.sjeduhs.kr/msi/useStplat.do">이용약관</a></li>
+                    <li><a href="http://saerom.sjeduhs.kr/msi/emailColctPolicy.do">이메일무단수집거부</a></li>
+                    <li><a href="http://saerom.sjeduhs.kr/msi/cpyrhtSttemntSvc.do">저작권신고</a></li>
+                </ul>
+                <div class="copyrights float_wrap">
+                    <address>우) 30126 세종특별자치시 새롬서로 68 새롬고등학교/ Tel : 044-999-6300</address>
+                    Fax : 행정실 : 044-999-6310 교무실 : 044-999-6320
+                    <p class="rights">COPYRIGHT © 새롬고등학교. All rights Reserved</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
